@@ -1,0 +1,83 @@
+package colle;
+import java.util.*;
+public class Hashsets {
+
+	public static void main(String[] args) {
+		HashSet<String> h=new HashSet<String>();
+		h.add("yugan");
+		h.add("avvaru");
+		h.add("known");
+		boolean bh=h.add("google");
+		System.out.println("is insertion done or not: "+bh);
+		System.out.println("the insertion is successfull: ");
+		for(String val:h)
+		{
+			
+		}
+		System.out.println(h);
+		System.out.println("the size of the hashset list is : "+h.size());
+		h.clear();
+		System.out.println("the hashset list is cleared :"+h);
+		boolean bhv=h.isEmpty();
+		
+		System.out.println(bhv);
+
+	}
+
+}
+
+2.......
+package colle;
+import java.util.*;
+public class NewArray {
+	
+	public static void main(String[] args) {
+		
+		ArrayList<String> a=new ArrayList<String>();
+		a.add("sweet");
+		a.add("yugan");
+		a.add("jhon");
+		System.out.println(a);
+	    for(String aa:a)
+	    {
+	         System.out.println(aa);
+	    }
+		a.add(1, "sugar");
+		System.out.println("to insert an element in the list " +a);
+		a.get(1);
+		System.out.println("to retrieve an element "+a.get(1));
+		a.set(2,"don");
+		System.out.println(a);
+		a.remove(2);
+		System.out.println(a);
+		a.contains("to search an element in the list "+"jhon");
+		Collections.sort(a);
+		System.out.println("to sort an array list"+a);
+		ArrayList<String> al=new ArrayList<String>();
+		al.add("sonu");
+		al.add("boss");
+		a.addAll(al);
+		System.out.println("adding two array lists"+a);
+		Collections.shuffle(a);
+		System.out.println("shuffling an array list "+a);
+		Collections.reverse(a);
+		System.out.println("to reverse an arraylist "+a);		
+		System.out.println("taking the range of array list "+a.subList(0,3));
+		boolean b=a.equals(al);	
+		System.out.println("comparing the elements" +b);
+		Collections.swap(a,0,1);
+		System.out.println("swapping the eelements" +a);
+		a.addAll(al);
+		System.out.println(a);
+		a.clone();
+		System.out.println(a);
+		a.clear();
+		System.out.println("it clears the total array list :"+a);
+		a.isEmpty();
+		System.out.println("It checkes whether the array list empty or not" +a);
+		a.trimToSize();
+		System.out.println(a);	
+		
+	}
+
+}
